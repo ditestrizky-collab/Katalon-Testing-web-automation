@@ -36,11 +36,9 @@ WebUI.setText(findTestObject('Web/Register/txt_confirmpassword'),'qwerty123')
 
 WebUI.click(findTestObject('Web/Register/btn_register'))
 
-WebUI.waitForElementPresent(findTestObject('Web/Register/lbl_registerberhasil'),5)
-WebUI.verifyElementVisible(findTestObject('Web/Register/lbl_registerberhasil'))
+WebUI.waitForElementPresent(findTestObject('Web/Register/lbl_failRegister'),5)
+WebUI.verifyElementText(findTestObject('Web/Register/lbl_failRegister'),'This username already exists.')
 
-def value = WebUI.getText(findTestObject('Web/Register/lbl_registerberhasil'))
-assert value.contains('Welcome') : "Seharusnya kehalaman Pendaftaran berhasil!"
 
 WebUI.closeBrowser()
-println "TC-04-Register_Valid Pass - Register Valid berhasil!"
+println "TC-04-Register_Invalid Pass - Register Invalid berhasil!"
