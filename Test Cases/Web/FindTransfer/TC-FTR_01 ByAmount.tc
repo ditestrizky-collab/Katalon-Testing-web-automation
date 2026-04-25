@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-FTR_01 ByAmount</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e939f910-8233-493a-aaec-ca772efa3cf2</testCaseGuid>
+</TestCaseEntity>

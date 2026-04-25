@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-FTR_02 ByDate</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>fa68c6cf-ae1e-49a6-beff-feb4b494e20e</testCaseGuid>
+</TestCaseEntity>

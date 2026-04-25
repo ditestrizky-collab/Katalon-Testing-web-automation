@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>link_transfer</name>
    <tag></tag>
-   <elementGuidId>ee5b701f-1313-43cd-ba93-0967dc28f318</elementGuidId>
+   <elementGuidId>de1141a1-e626-4d56-8c45-9e97dbb38b39</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>input[value=&quot;Log In&quot;]</value>
+         <value>a[href='transfer.htm']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

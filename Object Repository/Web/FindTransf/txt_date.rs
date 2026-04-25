@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>txt_date</name>
    <tag></tag>
-   <elementGuidId>ee5b701f-1313-43cd-ba93-0967dc28f318</elementGuidId>
+   <elementGuidId>fdd92c08-8ec0-4d56-bae7-8b65988d59dc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>input[value=&quot;Log In&quot;]</value>
+         <value>#transactionDate</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>

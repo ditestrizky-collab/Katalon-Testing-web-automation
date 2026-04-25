@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_login</name>
+   <name>btn_findByDateRange</name>
    <tag></tag>
-   <elementGuidId>ee5b701f-1313-43cd-ba93-0967dc28f318</elementGuidId>
+   <elementGuidId>5483ce8b-4b2b-4bf6-b6fc-88119708efdb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>input[value=&quot;Log In&quot;]</value>
+         <value>#findByDateRange</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>CSS</selectorMethod>
