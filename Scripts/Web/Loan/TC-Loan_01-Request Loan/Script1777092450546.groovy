@@ -18,22 +18,37 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.support.ui.Select	
 
 
-CustomKeywords.'common.WebHelper.login'('Haryadi01','qwerty123')
+					
+CustomKeywords.'common.WebHelper.loginDummy'('john','demo')
 
 WebUI.click(findTestObject('Web/Home/link_loan'))
 
-WebUI.setText(findTestObject('Web/Loan/txt_amount'),'300')
+def driver = DriverFactory.getWebDriver()
+def selectElement = new Select(driver.findElement(By.cssSelector('#fromAccountId')))
+
+WebUI.setText(findTestObject('Web/Loan/txt_loanAmount'),'300')
 WebUI.setText(findTestObject('Web/Loan/txt_downPayment'),'150')
 
-	
+List<WebElement> options = selectElement.getOptions()
+options.each { option ->
+    println "Value: ${option.getAttribute('value')} — Label: ${option.getText()}"
+}
+
+def firstValue = options.get(1).getAttribute('value')
+selectElement.selectByValue(firstValue)
+
 WebUI.click(findTestObject('Web/Loan/btn_submit'))
 
-WebUI.waitForElementPresent(findTestObject('Web/FindTransf/tbl_result'), 5)
+WebUI.waitForElementPresent(findTestObject('Web/Loan/lbl_statusLoan'),5)
+WebUI.verifyElementText(findTestObject('Web/Loan/lbl_statusLoan'),'Approved')
 
-
-WebUI.verifyElementPresent(findTestObject('Web/FindTransf/tbl_firstRow'), 5)
+WebUI.takeScreenshot(GlobalVariable.screenshotPathHome + 'TC-01-Loan.png')
 
 WebUI.closeBrowser()
-println "TC-FTR-01 ByAmount Pass - Mencari transaksi menggunakan amount berhasil"
+println "TC-loan-01 Request loan Pass -Berhasil request loan"

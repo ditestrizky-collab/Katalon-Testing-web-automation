@@ -28,4 +28,10 @@ public class WebHelper {
 		WebUI.setText(findTestObject('Web/Login/txt_password'),password)
 		WebUI.click(findTestObject('Web/Login/btn_login'))
 	}
+	def loginDummy(String username,String password){
+		WebUI.openBrowser('https://para.testar.org/parabank/')
+		WebUI.setText(findTestObject('Web/Login/txt_username'),username)
+		WebUI.setText(findTestObject('Web/Login/txt_password'),password)
+		WebUI.click(findTestObject('Web/Login/btn_login'))
+	}
 }

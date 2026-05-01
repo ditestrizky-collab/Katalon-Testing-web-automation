@@ -11,4 +11,11 @@
       <protected>false</protected>
       <valueType>STRING</valueType>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'C:\\Users\\Haryadi\\Katalon Studio\\Katalon-Testing-web-automation\\screenshot\\'</initValue>
+      <name>screenshotPathHome</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
