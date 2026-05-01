@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_register</name>
+   <name>btn_submit</name>
    <tag></tag>
-   <elementGuidId>232af6e9-7420-432d-abaa-1ba15bbfd74e</elementGuidId>
+   <elementGuidId>7b6a98e7-8995-4416-98e1-f2ab57837323</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>a[href='register.htm']</value>
+         <value>input[value='Apply Now']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
    </selectorCollection>

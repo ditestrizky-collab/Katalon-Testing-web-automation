@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_register</name>
+   <name>txt_loanAmount</name>
    <tag></tag>
-   <elementGuidId>232af6e9-7420-432d-abaa-1ba15bbfd74e</elementGuidId>
+   <elementGuidId>38242096-4d86-44cd-9e0a-aac4039c9152</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>a[href='register.htm']</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//*[@id = 'amount']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>CSS</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <smartLocatorEnabled>false</smartLocatorEnabled>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

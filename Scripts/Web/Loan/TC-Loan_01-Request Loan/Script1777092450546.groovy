@@ -16,27 +16,24 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.By
 
-WebUI.openBrowser('https://parabank.parasoft.com')
-WebUI.click(findTestObject('Web/Register/link_register'))
 
-WebUI.setText(findTestObject('Web/Register/txt_firstname'),'haryadi')
-WebUI.setText(findTestObject('Web/Register/txt_lastname'),'haryanto')
-WebUI.setText(findTestObject('Web/Register/txt_address'),'terin 1')
-WebUI.setText(findTestObject('Web/Register/txt_city'),'Depok')
-WebUI.setText(findTestObject('Web/Register/txt_state'),'ina')
-WebUI.setText(findTestObject('Web/Register/txt_zipcode'),'11450')
-WebUI.setText(findTestObject('Web/Register/txt_phonenumber'),'628527323222')
-WebUI.setText(findTestObject('Web/Register/txt_ssn'),'12321311')
+CustomKeywords.'common.WebHelper.login'('Haryadi01','qwerty123')
 
-WebUI.setText(findTestObject('Web/Register/txt_username'),'Haryadi01')
-WebUI.setText(findTestObject('Web/Register/txt_password'),'qwerty123')
-WebUI.setText(findTestObject('Web/Register/txt_confirmpassword'),'qwerty123')
+WebUI.click(findTestObject('Web/Home/link_loan'))
 
-WebUI.click(findTestObject('Web/Register/btn_register'))
+WebUI.setText(findTestObject('Web/Loan/txt_amount'),'300')
+WebUI.setText(findTestObject('Web/Loan/txt_downPayment'),'150')
 
-WebUI.waitForElementPresent(findTestObject('Web/Register/lbl_failRegister'),5)
-WebUI.verifyElementText(findTestObject('Web/Register/lbl_failRegister'),'This username already exists.')
+	
+WebUI.click(findTestObject('Web/Loan/btn_submit'))
+
+WebUI.waitForElementPresent(findTestObject('Web/FindTransf/tbl_result'), 5)
+
+
+WebUI.verifyElementPresent(findTestObject('Web/FindTransf/tbl_firstRow'), 5)
 
 WebUI.closeBrowser()
-println "TC-04-Register_Invalid Pass - Register Invalid berhasil!"
+println "TC-FTR-01 ByAmount Pass - Mencari transaksi menggunakan amount berhasil"

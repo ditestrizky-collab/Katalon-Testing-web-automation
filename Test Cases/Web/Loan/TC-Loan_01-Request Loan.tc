@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC-Loan_01-Request Loan</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1fdd6d2e-f7c7-4716-aeb9-e64d49cd9db8</testCaseGuid>
+</TestCaseEntity>

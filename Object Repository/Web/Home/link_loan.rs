@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>link_register</name>
+   <name>link_loan</name>
    <tag></tag>
-   <elementGuidId>232af6e9-7420-432d-abaa-1ba15bbfd74e</elementGuidId>
+   <elementGuidId>f11526f8-df15-4af9-8c01-b6ebdd48bd30</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>CSS</key>
-         <value>a[href='register.htm']</value>
+         <value>a[href='requestloan.htm']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value></value>
       </entry>
    </selectorCollection>

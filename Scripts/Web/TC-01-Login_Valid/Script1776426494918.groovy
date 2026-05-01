@@ -19,8 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('https://parabank.parasoft.com')
 
-WebUI.setText(findTestObject('Web/Login/txt_username'),'john')
-WebUI.setText(findTestObject('Web/Login/txt_password'),'demo')
+WebUI.setText(findTestObject('Web/Login/txt_username'),'Haryadi01')
+WebUI.setText(findTestObject('Web/Login/txt_password'),'qwerty123')
 WebUI.click(findTestObject('Web/Login/btn_login'))
 
 WebUI.waitForElementPresent(findTestObject('Web/Home/lbl_accountoverview'),5)
